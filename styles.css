@@ -1,17 +1,69 @@
-/* Import Montserrat font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-/* General Reset */
-body, html {
+/* Base styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
     text-align: center;
-    transition: background-color 0.5s, color 0.5s;
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds spacing between the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+/* Dark mode for the navigation bar */
+body.dark-mode nav {
+    background-color: #333;
+}
+
+/* Main content styling */
+main {
+    flex: 1; /* Makes the main content take the available space */
+    padding: 20px;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+/* Footer styling */
+footer {
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark-mode footer {
+    background-color: #333;
+    color: #f4f4f4;
 }
 
 /* Fade-in animation */
@@ -20,41 +72,3 @@ body, html {
         opacity: 1;
     }
 }
-
-/* Heading styles */
-h1, h2, h3 {
-    margin: 20px 0;
-}
-
-/* Paragraph styles */
-p {
-    margin: 20px auto;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-/* Dark mode toggle button */
-#darkModeToggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Toggle button hover effect */
-#darkModeToggle:hover {
-    background-color: #444444;
-}
-
