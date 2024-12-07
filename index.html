@@ -12,16 +12,25 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="chapters.html">Chapters</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <button id="darkModeToggle">Toggle Dark Mode</button>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Chapters ▾</a>
+            <div class="dropdown-content">
+                <a href="chapter1.html">1</a>
+                <a href="chapter2.html">2</a>
+                <a href="chapter3.html">3</a>
+                <!-- Add more chapter links as needed -->
+            </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Dark Mode toggle-->
+<button id="darkModeToggle">Toggle Dark Mode</button>
 
         <script>
     // Dark mode toggle functionality
