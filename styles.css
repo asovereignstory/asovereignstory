@@ -17,6 +17,38 @@ body.dark-mode {
     color: white;
 }
 
+/* Navigation bar styling */
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative; /* For dropdown positioning */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown Button Styling */
+nav ul li.dropdown .dropbtn {
+    cursor: pointer;
+}
+
 /* Align Dropdown to the Left Edge of the Page */
 nav ul li .dropdown-content {
     display: none;
@@ -54,10 +86,6 @@ body.dark-mode nav ul li .dropdown-content {
 body.dark-mode nav ul li .dropdown-content a {
     color: #f4f4f4;
 }
-
-
-
-
 
 /* Main content styling */
 main {
