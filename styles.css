@@ -1,4 +1,4 @@
-/* Base styling */
+/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -6,62 +6,59 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    min-height: 100vh; /* Ensures the body takes the full viewport height */
-    display: flex;
-    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark mode styling */
+/* Dark Mode Styling */
 body.dark-mode {
     background-color: black;
     color: white;
 }
 
-/* Navigation bar styling */
+/* Navigation Bar Styles */
 nav {
-    background-color: #f4f4f4;
-    padding: 10px 0;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    position: relative; /* For dropdown positioning */
+    display: inline-block;
+    position: relative;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    padding: 10px;
-    display: block;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
-/* Dropdown Button Styling */
-nav ul li.dropdown .dropbtn {
+/* Dropdown Button */
+nav ul li.dropdown a {
     cursor: pointer;
 }
 
 /* Align Dropdown to the Left Edge of the Page */
 nav ul li .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed; /* Fix the dropdown to the viewport */
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ccc;
     top: 100%;       /* Position below the nav bar */
-    left: 0;         /* Align with the left edge of the parent container */
-    right: 0;        /* Ensure it spans the full width */
+    left: 0;         /* Align to the left edge of the viewport */
+    width: 100%;     /* Make the dropdown span the full width of the page */
     white-space: nowrap; /* Prevent wrapping */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 1000;   /* Ensure it appears above other elements */
 }
 
 /* Ensure Links Display Horizontally */
@@ -77,39 +74,26 @@ nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Dark Mode for Dropdown */
-body.dark-mode nav ul li .dropdown-content {
+/* Dark Mode Toggle Button */
+.toggle-dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
     background-color: #444;
-    border-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-body.dark-mode nav ul li .dropdown-content a {
-    color: #f4f4f4;
+/* Fade-in Effect for Text */
+.fade-in {
+    animation: fadeIn 1s ease-in;
 }
 
-/* Main content styling */
-main {
-    flex: 1; /* Makes the main content take the available space */
-    padding: 20px;
-    opacity: 0;
-    animation: fadeIn 1s forwards; /* Fade-in animation */
-}
-
-/* Footer styling */
-footer {
-    padding: 10px 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-body.dark-mode footer {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-/* Fade-in animation */
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
