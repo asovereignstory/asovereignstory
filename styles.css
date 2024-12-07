@@ -46,22 +46,22 @@ nav ul li.dropdown a {
     cursor: pointer;
 }
 
-/* Align Dropdown to the Left Edge of the Page */
+/* Dropdown Menu Styles */
 nav ul li .dropdown-content {
     display: none;
-    position: fixed; /* Fix the dropdown to the viewport */
+    position: absolute; /* Position relative to the list item */
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ccc;
-    top: 100%;       /* Position below the nav bar */
-    left: 0;         /* Align to the left edge of the viewport */
-    width: 100%;     /* Make the dropdown span the full width of the page */
+    top: 100%; /* Position just below the parent link */
+    left: 0;   /* Align to the left edge of the parent link */
+    width: auto; /* Let the width be determined by the content */
     white-space: nowrap; /* Prevent wrapping */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;   /* Ensure it appears above other elements */
+    z-index: 1000; /* Ensure it appears above other elements */
 }
 
-/* Ensure Links Display Horizontally */
+/* Dropdown Links */
 nav ul li .dropdown-content a {
     display: inline-block;
     padding: 8px 12px;
