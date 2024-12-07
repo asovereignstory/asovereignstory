@@ -49,20 +49,20 @@ nav ul li.dropdown .dropbtn {
     cursor: pointer;
 }
 
-/* Dropdown Content for Horizontal Layout */
+/* Align Dropdown to the Left Edge of the Page */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ccc;
-    top: 100%; /* Position dropdown below the parent link */
-    left: 0;
-    white-space: nowrap; /* Prevent wrapping to new lines */
+    top: 100%; /* Position the dropdown below the nav bar */
+    left: 0; /* Align to the left edge of the page */
+    width: 100%; /* Make the dropdown span the full width of the container */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    min-width: 300px; /* Set a minimum width for the dropdown */
 }
+
 
 /* Dropdown Links */
 nav ul li .dropdown-content a {
@@ -74,7 +74,6 @@ nav ul li .dropdown-content a {
 
 /* Show Dropdown on Hover */
 nav ul li.dropdown:hover .dropdown-content {
-    display: block;
     display: flex; /* Use flexbox to keep items aligned horizontally */
     flex-wrap: nowrap; /* Prevent wrapping to a new line */
     gap: 15px; /* Add spacing between the chapter links */
