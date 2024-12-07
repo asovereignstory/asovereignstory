@@ -17,38 +17,6 @@ body.dark-mode {
     color: white;
 }
 
-/* Navigation bar styling */
-nav {
-    background-color: #f4f4f4;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-nav ul li {
-    position: relative; /* For dropdown positioning */
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    padding: 10px;
-    display: block;
-}
-
-/* Dropdown Button Styling */
-nav ul li.dropdown .dropbtn {
-    cursor: pointer;
-}
-
 /* Align Dropdown to the Left Edge of the Page */
 nav ul li .dropdown-content {
     display: none;
@@ -56,44 +24,37 @@ nav ul li .dropdown-content {
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ccc;
-    top: 100%; /* Position the dropdown below the nav bar */
-    left: 0; /* Align to the left edge of the page */
-    width: 100%; /* Make the dropdown span the full width of the container */
+    top: 100%;       /* Position below the nav bar */
+    left: 0;         /* Align with the left edge of the parent container */
+    right: 0;        /* Ensure it spans the full width */
+    white-space: nowrap; /* Prevent wrapping */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
 }
 
-
-/* Dropdown Links */
+/* Ensure Links Display Horizontally */
 nav ul li .dropdown-content a {
-    padding: 5px 10px;
+    display: inline-block;
+    padding: 8px 12px;
     text-decoration: none;
-    color: inherit;
-    display: inline-block; /* Ensure links are displayed in a row */
+    color: black;
 }
 
 /* Show Dropdown on Hover */
 nav ul li.dropdown:hover .dropdown-content {
-    display: flex; /* Use flexbox to keep items aligned horizontally */
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-    gap: 15px; /* Add spacing between the chapter links */
-    overflow-x: auto; /* Allow horizontal scrolling if the links exceed the dropdown width */
+    display: block;
 }
 
-/* Dark Mode for Navigation and Dropdown */
+/* Dark Mode for Dropdown */
 body.dark-mode nav ul li .dropdown-content {
     background-color: #444;
     border-color: #555;
 }
 
 body.dark-mode nav ul li .dropdown-content a {
-    color: white;
+    color: #f4f4f4;
 }
 
-body.dark-mode nav ul li .dropdown-content a:hover {
-    background-color: #555;
-    border-color: #666;
-}
 
 
 
