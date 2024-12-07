@@ -49,31 +49,41 @@ nav ul li.dropdown .dropbtn {
     cursor: pointer;
 }
 
-/* Dropdown Content */
+/* Dropdown Content for Horizontal Layout */
 nav ul li .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f4f4f4;
-    min-width: 50px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    white-space: nowrap;
+    padding: 10px 0;
+    border: 1px solid #ccc;
     top: 100%; /* Positions the dropdown directly below the parent link */
     left: 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 /* Dropdown Links */
 nav ul li .dropdown-content a {
-    padding: 10px;
+    padding: 5px 10px;
     text-decoration: none;
     color: inherit;
-    display: block;
-    white-space: nowrap;
+    border: 1px solid transparent;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover Effect for Dropdown Links */
+nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+    border-color: #bbb;
 }
 
 /* Show Dropdown on Hover */
 nav ul li.dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
 
 /* Dark Mode for Navigation and Dropdown */
@@ -81,17 +91,24 @@ body.dark-mode nav {
     background-color: #333;
 }
 
+body.dark-mode nav ul li a {
+    color: white;
+}
+
 body.dark-mode nav ul li .dropdown-content {
     background-color: #444;
+    border-color: #555;
 }
 
 body.dark-mode nav ul li .dropdown-content a {
     color: white;
 }
 
-body.dark-mode nav ul li a {
-    color: white;
+body.dark-mode nav ul li .dropdown-content a:hover {
+    background-color: #555;
+    border-color: #666;
 }
+
 
 
 /* Main content styling */
