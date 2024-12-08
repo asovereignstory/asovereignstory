@@ -1,18 +1,13 @@
 /* General Styles */
-title {
-    text-align: centre;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     color: black;
-    margin: 400px;
-    margin-top: 0px;
-    margin-bottom: 100 px;
-    padding: 0;
+    margin: 50px auto;
+    padding: 0 20px;
     text-align: left;
     transition: background-color 0.3s, color 0.3s;
+    max-width: 1200px; /* Set a max-width for the body */
 }
 
 /* Dark Mode Styling */
@@ -38,26 +33,27 @@ nav ul li {
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 50%;                      /* Center the dropdown relative to the parent */
-    transform: translateX(-50%);    /* Shift back by half of its width to fully center */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #f4f4f4;
     border: 1px solid #ccc;
     padding: 5px;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 50vw;
-    white-space: normal;            /* Allow wrapping */
+    width: 80vw;         /* Make the dropdown width responsive */
+    max-width: 600px;    /* Limit the maximum width */
+    white-space: normal; /* Allow wrapping */
 }
 
 /* Dropdown Heading Styles */
 .chapter-section h4 {
     position: relative;
-    top: 4px;          /* Adjust upward as needed */
-    line-height: 1.2;   /* Slightly tighter line height */
-    margin-top: 0;      /* Remove any top margin */
-    padding-top: 0;     /* Remove any top padding */
-    font-weight: bold;  /* Optional: Make the heading stand out */
+    top: 4px;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: bold;
     font-family: Montserrat, sans-serif;
     font-size: 1.2em;
     margin-bottom: 5px;
@@ -68,7 +64,7 @@ nav ul li {
 /* Dropdown Links */
 .chapter-section a {
     display: inline-block;
-    margin: 5px 4px;                /* Add space between chapter links */
+    margin: 5px 4px;
     text-decoration: none;
     color: #000;
     padding: 5px 5px;
@@ -86,7 +82,6 @@ nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
 
-
 /* Dark Mode Toggle Button */
 .toggle-dark-mode {
     position: absolute;
@@ -99,7 +94,6 @@ nav ul li.dropdown:hover .dropdown-content {
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    text-align: center;
 }
 
 /* Fade-in Effect for Text */
@@ -110,4 +104,28 @@ nav ul li.dropdown:hover .dropdown-content {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        transform: none;
+    }
+
+    .toggle-dark-mode {
+        top: 10px;
+        right: 10px;
+    }
 }
