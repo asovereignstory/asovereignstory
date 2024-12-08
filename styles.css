@@ -46,6 +46,12 @@ nav ul li {
 
 /* Dropdown Heading Styles */
 .chapter-section h4 {
+    position: relative;
+    top: -10px;          /* Adjust upward as needed */
+    line-height: 1.2;   /* Slightly tighter line height */
+    margin-top: 0;      /* Remove any top margin */
+    padding-top: 0;     /* Remove any top padding */
+    font-weight: bold;  /* Optional: Make the heading stand out */
     font-family: Montserrat, sans-serif;
     font-size: 1.2em;
     margin-bottom: 5px;
