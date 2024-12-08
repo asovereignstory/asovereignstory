@@ -49,16 +49,19 @@ nav ul li.dropdown a {
 /* Dropdown Menu Styles */
 nav ul li .dropdown-content {
     display: none;
-    position: absolute; /* Position relative to the list item */
+    position: absolute;
+    left: 50%;          /* Start at the center of the parent container */
+    transform: translateX(-50%);  /* Shift left by half of its width to center it */
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ccc;
-    top: 100%; /* Position just below the parent link */
-    left: 0;   /* Align to the left edge of the parent link */
-    width: auto; /* Let the width be determined by the content */
-    white-space: nowrap; /* Prevent wrapping */
+    top: 100%;          /* Position just below the parent link */
+    width: auto;
+    max-width: 90%;     /* Prevent the dropdown from being too wide */
+    white-space: normal; /* Allow wrapping */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000;
+    text-align: center; /* Center align the content */
 }
 
 /* Dropdown Links */
@@ -67,12 +70,14 @@ nav ul li .dropdown-content a {
     padding: 8px 12px;
     text-decoration: none;
     color: black;
+    margin: 5px;        /* Add some space between chapter links */
 }
 
 /* Show Dropdown on Hover */
 nav ul li.dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* Dark Mode Toggle Button */
 .toggle-dark-mode {
