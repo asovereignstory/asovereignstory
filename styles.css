@@ -47,7 +47,7 @@ nav ul li {
 /* Dropdown Heading Styles */
 .chapter-section h4 {
     position: relative;
-    top: -10px;          /* Adjust upward as needed */
+    top: -8px;          /* Adjust upward as needed */
     line-height: 1.2;   /* Slightly tighter line height */
     margin-top: 0;      /* Remove any top margin */
     padding-top: 0;     /* Remove any top padding */
