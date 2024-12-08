@@ -28,26 +28,20 @@ nav ul li {
     padding: 10px;
 }
 
-/* Ensure the dropdown parent takes full width */
-.dropdown {
-    position: relative;
-    width: 100%;
-    text-align: center;  /* Center-align the dropdown trigger */
-}
-
 /* Dropdown Menu Styles */
 .dropdown-content {
-    display: inline-block;  /* Allow it to expand horizontally */
-    width: 80%;             /* Set a specific width */
-    max-width: 800px;       /* Limit the maximum width */
+    display: none;
     position: absolute;
-    left: 50%;              /* Start from the center */
-    transform: translateX(-50%);  /* Shift left by half its width to center it */
-    background-color: #444; /* Ensure background color */
-    z-index: 1000;          /* Keep it above other elements */
-    white-space: normal;    /* Allow wrapping if needed */
-    padding: 10px;          /* Add padding for aesthetics */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    left: 50%;                      /* Center the dropdown relative to the parent */
+    transform: translateX(-50%);    /* Shift back by half of its width to fully center */
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 1000px
+    white-space: normal;            /* Allow wrapping */
 }
 
 /* Dropdown Heading Styles */
