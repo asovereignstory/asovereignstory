@@ -3,11 +3,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     color: black;
-    margin: 50px auto;
+    margin: 300px auto;
     padding: 0 20px;
     text-align: left;
     transition: background-color 0.3s, color 0.3s;
     max-width: 1200px; /* Set a max-width for the body */
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 /* Dark Mode Styling */
@@ -86,7 +90,6 @@ nav ul li.dropdown:hover .dropdown-content {
 .toggle-dark-mode {
     position: absolute;
     top: 20px;
-    right: 20px;
     cursor: pointer;
     background-color: #444;
     color: white;
@@ -94,6 +97,8 @@ nav ul li.dropdown:hover .dropdown-content {
     border: none;
     border-radius: 5px;
     font-size: 14px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Fade-in Effect for Text */
