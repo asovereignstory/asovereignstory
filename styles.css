@@ -1,4 +1,8 @@
 /* General Styles */
+title {
+    text-align: centre;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -95,6 +99,7 @@ nav ul li.dropdown:hover .dropdown-content {
     border: none;
     border-radius: 5px;
     font-size: 14px;
+    text-align: center;
 }
 
 /* Fade-in Effect for Text */
