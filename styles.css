@@ -32,6 +32,12 @@ body.dark-mode {
     color: white;
 }
 
+/* Dark Mode Wrapper */
+.dark-mode-wrapper {
+    text-align: center;  /* Center anything inside this div */
+    margin: 10px 0;      /* Add some spacing above and below the button */
+}
+
 /* General Navigation Styles */
 nav ul {
     list-style-type: none;
@@ -100,7 +106,6 @@ nav ul li.dropdown:hover .dropdown-content {
 
 /* Dark Mode Toggle Button */
 .toggle-dark-mode {
-    position: absolute;
     top: 20px;
     cursor: pointer;
     background-color: #444;
@@ -109,8 +114,6 @@ nav ul li.dropdown:hover .dropdown-content {
     border: none;
     border-radius: 5px;
     font-size: 14px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /* Fade-in Effect for Text */
