@@ -16,7 +16,6 @@ body {
     padding: 0 20px;
     text-align: left;
     transition: background-color 0.3s, color 0.3s;
-    max-width: 1200px; /* Set a max-width for the body */
 }
 
 footer {
