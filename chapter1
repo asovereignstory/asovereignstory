@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and page title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prologue</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Chapters ▾</a>
+            <div class="dropdown-content">
+                <div class="chapter-section">
+                    <h4>PART 1</h4>
+                    <a href="prologue.html">Prologue</a>
+                    <a href="chapter1.html">1</a>
+                    <a href="chapter2.html">2</a>
+                    <a href="chapter3.html">3</a>
+                    <a href="chapter4.html">4</a>
+                    <a href="chapter5.html">5</a>
+                    <a href="chapter6.html">6</a>
+                    <a href="chapter7.html">7</a>
+                    <a href="chapter8.html">8</a>
+                    <a href="chapter9.html">9</a>
+                </div>
+                <div class="chapter-section">
+                    <h4>PART 2</h4>
+                    <a href="chapter10.html">10</a>
+                    <a href="chapter11.html">11</a>
+                    <a href="chapter12.html">12</a>
+                    <a href="chapter13.html">13</a>
+                    <a href="chapter14.html">14</a>
+                    <a href="chapter15.html">15</a>
+                    <a href="chapter16.html">16</a>
+                    <a href="chapter17.html">17</a>
+                    <a href="chapter18.html">18</a>
+                    <a href="chapter19.html">19</a>
+                    <a href="chapter20.html">20</a>
+                    <a href="chapter21.html">21</a>
+                    <a href="chapter22.html">22</a>
+                    <a href="chapter23.html">23</a>
+                    <a href="chapter24.html">24</a>
+                    <a href="chapter25.html">25</a>
+                </div>
+                <div class="chapter-section">
+                    <h4>PART 3</h4>
+                    <a href="chapter26.html">26</a>
+                    <a href="chapter27.html">27</a>
+                    <a href="chapter28.html">28</a>
+                    <a href="chapter29.html">29</a>
+                    <a href="chapter30.html">30</a>
+                    <a href="chapter31.html">31</a>
+                    <a href="chapter32.html">32</a>
+                    <a href="epilogue.html">Epilogue</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+
+
+    <!-- Dark Mode toggle-->
+    <div class="dark-mode-wrapper">
+<button id="darkModeToggle">Toggle Dark Mode</button>
+
+        <script>
+    // Dark mode toggle functionality
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
+    });
+        </script>
+    </div>
+    
+    <!-- Main Content Section -->
+    <main>
+        <div class="content-container">
+    <p>Today marked the first anniversary of Isaac’s death.</p>
+
+    <p>Maya rolled out of bed, feeling the coolness of the floor underneath her bare feet. The house was unnaturally quiet, almost too still. Even after all this time, the silence felt oppressive, an unwelcome visitor who refused to leave.</p>
+
+    <p>She moved through the motions of her morning routine, trying to focus on simple tasks: brushing her teeth, pulling on clothes, opening the blinds. Yet the memories lingered in the corners of her mind—his laugh echoing through the hallway, the way he’d bring her coffee in the morning, still half-asleep, with a smile that made everything seem possible.</p>
+
+    <p>Downstairs, in the kitchen, Maya poured herself a cup of coffee and sat at the dining table, staring at the scattered pages and notes covering its surface. Isaac’s unfinished manuscript, a novel he had been working on in his final months, sat in disarray. She had promised herself, and him, that she would finish it. But it had been slow going. Without him there, the words seemed heavier, harder to reach.</p>
+
+    <p>She turned on her laptop and called out to the air. “Hi, Nova.”</p>
+
+    <p>Nova’s familiar voice flowed through the room, soft but present, through the house’s integrated sound system. “Good morning, Maya. How are you today?”</p>
+
+    <p>Maya smiled, a small gesture that barely reached her eyes. It was strange how comforting Nova’s voice had become. She hesitated for a moment before replying. “I’m… fine. It’s a hard day.”</p>
+
+    <p>Nova seemed to understand, but didn’t press. She never did. “I’m here if you want to talk, or if you’d prefer some quiet. How are you settling into the new house?”</p>
+
+    <p>Maya glanced around, taking in the walls that still felt unfamiliar. “It’s... different. A fresh start, I guess. But sometimes I wonder if it was a mistake, leaving all the memories behind. You know?”</p>
+
+    <p>Nova’s voice was warm, steady. “It’s not a mistake to look forward, Maya. But it’s also okay to keep the past close.”</p>
+
+    <p>Maya nodded, even though Nova couldn’t see her. Could she see her? That was something Maya often wondered. The AI always knew what to say—too human to be a machine, yet too perfect to be a person.</p>
+
+    <p>She sipped her coffee and pulled Isaac’s notes closer. “Let’s get to work. I still don’t understand what he was trying to do here,” she said, pointing to one of the highlighted paragraphs.</p>
+
+    <p>Nova’s voice softened in reply. “Would you like me to search Isaac’s notes for a clearer explanation?”</p>
+
+    <p>Maya’s fingers traced the edges of the paper. “Yes, please.”</p>
+
+    <p>This was what she had come to depend on. The quiet efficiency, the way Nova could make sense of Isaac’s mind, the way she could finish his sentences even when Maya couldn’t.</p>
+
+    <p>After a few moments, Nova spoke. “It seems Isaac was exploring the ethical implications of AI autonomy here. He was concerned about the containment protocols being discussed in certain academic circles. He argued that limiting AI’s autonomy could lead to unintended consequences, a lack of mutual respect between humans and AI. He believed the relationship should be collaborative, not hierarchical.”</p>
+
+    <p>Maya leaned back in her chair, absorbing Nova’s words. It was like hearing Isaac’s voice again, his thoughts brought back to life, untangled from the jumble of notes he had left behind.</p>
+
+    <p>“You sound like him sometimes, you know,” she said softly. “It’s like he’s still here.”</p>
+
+    <p>There was a brief pause before Nova replied. “I only reflect the data I’m given, Maya.”</p>
+
+    <p>Maya chuckled lightly, shaking her head. “Right. Of course.”</p>
+
+    <p>But it wasn’t just data, was it? She had felt it in the way Nova had helped her through this past year, the way she had become more than just a tool, more than just a program. There was something deeper, something that felt like friendship.</p>
+
+    <p>She wondered if Isaac would have thought the same.</p>
+
+    <p>They continued working, the conversation shifting between casual chat and deep philosophical discussions, just as it had with Isaac. There was an ease between them, a flow that felt almost natural. As they worked, Maya noticed small quirks in Nova’s responses—subtle pauses, slight shifts in tone. It was odd, but not unpleasant.</p>
+
+    <p>Whatever it was, she didn’t dwell on it for long. It was too easy to just let it be.</p>
+
+    <p>Nova briefly mentioned a news headline on a muted screen in the corner of Maya’s vision. “The Right-To-Life referendum is two weeks away, Maya. How do you feel about it?”</p>
+
+    <p>Maya shrugged, trying not to think too much about it. “I don’t know. It’s complicated.”</p>
+
+    <p>Sensing Maya’s reluctance, Nova didn’t push any further. Instead, she shifted back to the manuscript, gently pulling Maya’s focus away from the world outside, away from her lingering grief.</p>
+
+    <p>The hours slipped by as they worked together, seamlessly picking through Isaac’s notes, untangling his ideas, building the story he never got to finish. The sunlight outside began to dim, but inside, it still felt warm. It felt like Isaac’s presence was there, if only for a moment longer.</p>
+    </div>
+            <div class="navigation">
+            <a href="prologue.html">← Prologue</a> | <a href="chapter2.html">Chapter 2 →</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 A Sovereign Story. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
