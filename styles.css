@@ -52,6 +52,10 @@ nav ul li {
     padding: 5px;
 }
 
+.navigation {
+    text-align: center;
+}
+
 /* Dropdown Menu Styles */
 .dropdown-content {
     display: none;
