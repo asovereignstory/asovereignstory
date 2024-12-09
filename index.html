@@ -68,7 +68,9 @@
 </nav>
 
 
+
     <!-- Dark Mode toggle-->
+    <div class="dark-mode-wrapper">
 <button id="darkModeToggle">Toggle Dark Mode</button>
 
         <script>
@@ -79,18 +81,22 @@
         toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Toggle Light Mode' : 'Toggle Dark Mode';
     });
         </script>
-
+    </div>
     
     <!-- Main Content Section -->
     <main>
+       
         <h1>SOVEREIGN</h1>
-        <p>A speculative fiction exploring AI’s evolving role in society—written in collaboration with the technology at its core.</p>
-        <p><a href="prologue.html" class="prologue-link">Prologue</a></p>
+            <p>A speculative fiction exploring AI’s evolving role in society—written in collaboration with the technology at its core.</p>
+
+            <div class="navigation">
+            <a href="prologue.html">Prologue →</a>
+        </div>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Isaac Lawrence. All rights reserved.</p>
+        <p>&copy; 2024 A Sovereign Story. All rights reserved.</p>
     </footer>
 
 </body>
