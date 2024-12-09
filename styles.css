@@ -1,11 +1,15 @@
 /* General Styles */
+html {
+    position: relative;
+}
+
 body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     color: black;
     width: 90%;
-    max-width: 800px;
+    max-width: 550px;
     margin: 0px auto;
     margin-top: 0px;
     margin-bottom: 0px;
