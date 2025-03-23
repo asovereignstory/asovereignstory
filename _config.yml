@@ -1,8 +1,0 @@
-# Minimal configuration for clean URLs and favicon
-permalink: /:title/
-title: A Sovereign Story
-
-# Favicon paths (just for reference in your layout)
-favicon_ico: /favicon.ico
-favicon_16: /favicon-16x16.png
-favicon_32: /favicon-32x32.png
